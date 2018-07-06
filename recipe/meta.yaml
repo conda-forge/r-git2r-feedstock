@@ -9,38 +9,41 @@ package:
 source:
   fn: git2r_{{ version }}.tar.gz
   url:
-    - https://cran.r-project.org/src/contrib/git2r_{{ version }}.tar.gz
-    - https://cran.r-project.org/src/contrib/Archive/git2r/git2r_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/git2r_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/Archive/git2r/git2r_{{ version }}.tar.gz
   sha256: 0480e4c47394ad1724c80982eff3be5ce34168046939340bf22cc1df6b6baf87
 
 build:
-  number: 0
+  merge_build_host: True  # [win]
+  number: 1
   skip: true  # [win32]
-
   rpaths:
     - lib/R/lib/
     - lib/
 
 requirements:
   build:
+    - {{ compiler('c') }}        # [not win]
+    - {{native}}toolchain        # [win]
+    - {{posix}}filesystem        # [win]
+    - {{posix}}sed               # [win]
+    - {{posix}}grep              # [win]
+    - {{posix}}autoconf
+    - {{posix}}automake-wrapper  # [win]
+    - {{posix}}automake          # [win]
+    - {{posix}}pkg-config
+    - {{posix}}make
+    - {{posix}}sed  # [win]
+    - {{posix}}coreutils  # [win]
+  host:
     - r-base
-    - posix                # [win]
-    - {{native}}toolchain  # [win]
-    - gcc                  # [not win]
-    - libssh2 1.8.*
-    - openssl 1.0.*
-    - zlib 1.2.11
-
   run:
     - r-base
-    - libgcc  # [not win]
-    - libssh2 1.8.*
-    - openssl 1.0.*
-    - zlib 1.2.11
+    - {{native}}gcc-libs         # [win]
 
 test:
   commands:
-    - $R -e "library('git2r')"  # [not win]
+    - $R -e "library('git2r')"           # [not win]
     - "\"%R%\" -e \"library('git2r')\""  # [win]
 
 about:
@@ -59,3 +62,4 @@ extra:
     - bgruening
     - daler
     - jdblischak
+    - cbrueffer
