@@ -1,4 +1,4 @@
-{% set version = '0.21.0' %}
+{% set version = "0.23.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -11,7 +11,7 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/git2r_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/git2r/git2r_{{ version }}.tar.gz
-  sha256: 0480e4c47394ad1724c80982eff3be5ce34168046939340bf22cc1df6b6baf87
+  sha256: 3fd37340572ecc3ac8daf771b82a851635f8f7d416a4ab84f7d69522be044504
 
 build:
   number: 0
