@@ -14,7 +14,8 @@ source:
   sha256: 0480e4c47394ad1724c80982eff3be5ce34168046939340bf22cc1df6b6baf87
 
 build:
-  number: 0
+  merge_build_host: True  # [win]
+  number: 1
   skip: true  # [win32]
 
   rpaths:
@@ -23,20 +24,20 @@ build:
 
 requirements:
   build:
-    - r-base
     - posix                # [win]
-    - {{native}}toolchain  # [win]
-    - gcc                  # [not win]
-    - libssh2 1.8.*
-    - openssl 1.0.*
-    - zlib 1.2.11
+    - {{ compiler('c') }}        # [unix]
+    - {{ compiler('m2w64_c') }}  # [win]
+  host:
+    - r-base
+    - libssh2
+    - openssl
+    - zlib
 
   run:
     - r-base
-    - libgcc  # [not win]
-    - libssh2 1.8.*
-    - openssl 1.0.*
-    - zlib 1.2.11
+    - libssh2
+    - openssl
+    - zlib
 
 test:
   commands:
