@@ -7,7 +7,10 @@ Package license: GPL-2
 
 Feedstock license: BSD 3-Clause
 
-Summary: Interface to the 'libgit2' library, which is a pure C implementation of the 'Git' core methods. Provides access to 'Git' repositories to extract data and running some basic 'Git' commands.
+Summary: Interface to the 'libgit2' library, which is a pure C implementation of the 'Git'
+core methods. Provides access to 'Git' repositories to extract data and running
+some basic 'Git' commands.
+
 
 
 
