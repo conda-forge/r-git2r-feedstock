@@ -1,5 +1,4 @@
-{% set version = '0.23.0' %}
-
+{% set version = '0.24.0' %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -8,16 +7,14 @@ package:
   version: {{ version|replace("-", "_") }}
 
 source:
-  fn: git2r_{{ version }}.tar.gz
   url:
     - {{ cran_mirror }}/src/contrib/git2r_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/git2r/git2r_{{ version }}.tar.gz
-  sha256: 3fd37340572ecc3ac8daf771b82a851635f8f7d416a4ab84f7d69522be044504
+  sha256: ef813f28dcef76109e7fdc24ac00db539c253f977f5ccb12617714497e11cc6d
 
 build:
   merge_build_host: True  # [win]
-  number: 1000
-
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -36,13 +33,11 @@ requirements:
     - {{posix}}make
     - {{posix}}coreutils         # [win]
     - {{posix}}zip               # [win]
-
   host:
     - r-base
     - libssh2
     - openssl
     - zlib
-
   run:
     - r-base
     - {{native}}gcc-libs         # [win]
@@ -58,8 +53,7 @@ test:
 about:
   home: https://github.com/ropensci/git2r
   license: GPL-2
-  summary: | 
-    Interface to the 'libgit2' library, which is a pure C implementation of the 'Git'
+  summary: Interface to the 'libgit2' library, which is a pure C implementation of the 'Git'
     core methods. Provides access to 'Git' repositories to extract data and running
     some basic 'Git' commands.
   license_family: GPL2
@@ -67,9 +61,28 @@ about:
 
 extra:
   recipe-maintainers:
-    - johanneskoester
-    - bgruening
-    - daler
-    - jdblischak
-    - cbrueffer
-    - dbast
+    - conda-forge/r
+
+# Package: git2r
+# Title: Provides Access to Git Repositories
+# Description: Interface to the 'libgit2' library, which is a pure C implementation of the 'Git' core methods. Provides access to 'Git' repositories to extract data and running some basic 'Git' commands.
+# Version: 0.24.0
+# License: GPL-2
+# Copyright: See COPYRIGHTS file.
+# URL: https://github.com/ropensci/git2r
+# BugReports: https://github.com/ropensci/git2r/issues
+# Maintainer: Stefan Widgren <stefan.widgren@gmail.com>
+# Author: See AUTHORS file.
+# Imports: graphics, utils
+# Depends: R (>= 3.1)
+# Suggests: getPass
+# Type: Package
+# LazyData: true
+# Biarch: true
+# NeedsCompilation: yes
+# SystemRequirements: By default, git2r uses a system installation of the libgit2 headers and library. However, if a system installation is not available, builds and uses a bundled version of the libgit2 source. zlib headers and library. OpenSSL headers and library (non-macOS). LibSSH2 (optional on non-Windows) to enable the SSH transport.
+# Collate: 'blame.R' 'blob.R' 'branch.R' 'bundle_r_package.R' 'checkout.R' 'commit.R' 'config.R' 'contributions.R' 'credential.R' 'diff.R' 'fetch.R' 'git2r.R' 'index.R' 'libgit2.R' 'merge.R' 'note.R' 'odb.R' 'plot.R' 'pull.R' 'punch_card.R' 'push.R' 'reference.R' 'reflog.R' 'refspec.R' 'remote.R' 'repository.R' 'reset.R' 'revparse.R' 'sha.R' 'signature.R' 'stash.R' 'status.R' 'tag.R' 'time.R' 'tree.R' 'when.R'
+# RoxygenNote: 6.0.1
+# Packaged: 2019-01-05 21:41:39 UTC; stefan
+# Repository: CRAN
+# Date/Publication: 2019-01-07 18:10:08 UTC
