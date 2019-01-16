@@ -1,17 +1,19 @@
-build_number_decrement:
-- '0'
+MACOSX_DEPLOYMENT_TARGET:
+- '10.9'
 c_compiler:
-- gcc
+- clang
 channel_sources:
-- conda-forge/label/gcc7,defaults
+- conda-forge,defaults
 channel_targets:
-- conda-forge gcc7
+- conda-forge main
 cran_mirror:
 - https://cran.r-project.org
-docker_image:
-- condaforge/linux-anvil-comp7
 libssh2:
 - '1.8'
+macos_machine:
+- x86_64-apple-darwin13.4.0
+macos_min_version:
+- '10.9'
 openssl:
 - 1.0.2
 pin_run_as_build:
@@ -26,12 +28,6 @@ pin_run_as_build:
 r_base:
 - 3.5.1
 target_platform:
-- linux-64
-zip_keys:
-- - c_compiler
-  - channel_sources
-  - channel_targets
-  - docker_image
-  - build_number_decrement
+- osx-64
 zlib:
 - '1.2'
