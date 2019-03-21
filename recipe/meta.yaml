@@ -1,4 +1,4 @@
-{% set version = '0.25.1' %}
+{% set version = '0.25.2' %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/git2r_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/git2r/git2r_{{ version }}.tar.gz
-  sha256: aae9c515af649ec651c012f903c732853ee52fba39510dedfedeaa841a5fcc8a
+  sha256: e002c44551f021a7a1fabce9cbd6ac6f16f6dee4d2c60f4b8c280b9fcddf7796
 
 build:
   merge_build_host: True  # [win]
@@ -66,7 +66,7 @@ extra:
 # Package: git2r
 # Title: Provides Access to Git Repositories
 # Description: Interface to the 'libgit2' library, which is a pure C implementation of the 'Git' core methods. Provides access to 'Git' repositories to extract data and running some basic 'Git' commands.
-# Version: 0.25.1
+# Version: 0.25.2
 # License: GPL-2
 # Copyright: See COPYRIGHTS file.
 # URL: https://github.com/ropensci/git2r
@@ -84,6 +84,6 @@ extra:
 # Collate: 'blame.R' 'blob.R' 'branch.R' 'bundle_r_package.R' 'checkout.R' 'commit.R' 'config.R' 'contributions.R' 'credential.R' 'diff.R' 'fetch.R' 'git2r.R' 'index.R' 'libgit2.R' 'merge.R' 'note.R' 'odb.R' 'plot.R' 'pull.R' 'punch_card.R' 'push.R' 'reference.R' 'reflog.R' 'refspec.R' 'remote.R' 'repository.R' 'reset.R' 'revparse.R' 'sha.R' 'signature.R' 'stash.R' 'status.R' 'tag.R' 'time.R' 'tree.R' 'when.R'
 # Encoding: UTF-8
 # RoxygenNote: 6.1.1
-# Packaged: 2019-03-17 12:58:16 UTC; stefan
+# Packaged: 2019-03-19 19:56:18 UTC; stefan
 # Repository: CRAN
-# Date/Publication: 2019-03-17 19:00:08 UTC
+# Date/Publication: 2019-03-19 23:10:03 UTC
