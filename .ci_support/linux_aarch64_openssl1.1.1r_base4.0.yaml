@@ -1,18 +1,26 @@
+BUILD:
+- aarch64-conda_cos7-linux-gnu
+c_compiler:
+- gcc
+c_compiler_version:
+- '9'
+cdt_arch:
+- aarch64
+cdt_name:
+- cos7
 channel_sources:
-- conda-forge,defaults
+- conda-forge
 channel_targets:
 - conda-forge main
 cran_mirror:
 - https://cran.r-project.org
+docker_image:
+- quay.io/condaforge/linux-anvil-aarch64
 libssh2:
 - '1'
-m2w64_c_compiler:
-- m2w64-toolchain
 openssl:
 - 1.1.1
 pin_run_as_build:
-  openssl:
-    max_pin: x.x.x
   r-base:
     min_pin: x.x
     max_pin: x.x
@@ -21,6 +29,6 @@ pin_run_as_build:
 r_base:
 - '4.0'
 target_platform:
-- win-64
+- linux-aarch64
 zlib:
 - '1.2'
