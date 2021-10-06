@@ -20,6 +20,18 @@ jobs:
       osx_64_openssl3r_base4.1:
         CONFIG: osx_64_openssl3r_base4.1
         UPLOAD_PACKAGES: 'True'
+      osx_arm64_openssl1.1.1r_base4.0:
+        CONFIG: osx_arm64_openssl1.1.1r_base4.0
+        UPLOAD_PACKAGES: 'True'
+      osx_arm64_openssl1.1.1r_base4.1:
+        CONFIG: osx_arm64_openssl1.1.1r_base4.1
+        UPLOAD_PACKAGES: 'True'
+      osx_arm64_openssl3r_base4.0:
+        CONFIG: osx_arm64_openssl3r_base4.0
+        UPLOAD_PACKAGES: 'True'
+      osx_arm64_openssl3r_base4.1:
+        CONFIG: osx_arm64_openssl3r_base4.1
+        UPLOAD_PACKAGES: 'True'
   timeoutInMinutes: 360
 
   steps:
