@@ -7,4 +7,3 @@ cp $BUILD_PREFIX/share/gnuconfig/config.* .
 
 # shellcheck disable=SC2086
 ${R} CMD INSTALL --build . ${R_ARGS}
-
