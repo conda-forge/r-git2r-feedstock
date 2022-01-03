@@ -1,7 +1,7 @@
 About r-git2r
 =============
 
-Home: https://github.com/ropensci/git2r
+Home: https://docs.ropensci.org/git2r/ (website), https://github.com/ropensci/git2r
 
 Package license: GPL-2.0-only
 
@@ -296,5 +296,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@colinbrislawn](https://github.com/colinbrislawn/)
 * [@conda-forge/r](https://github.com/conda-forge/r/)
+* [@jdblischak](https://github.com/jdblischak/)
 

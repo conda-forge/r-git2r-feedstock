@@ -11,7 +11,7 @@ channel_targets:
 cran_mirror:
 - https://cran.r-project.org
 docker_image:
-- quay.io/condaforge/linux-anvil-comp7
+- quay.io/condaforge/linux-anvil-cos7-x86_64
 libssh2:
 - '1'
 openssl:
@@ -26,8 +26,5 @@ r_base:
 - '4.0'
 target_platform:
 - linux-64
-zip_keys:
-- - cdt_name
-  - docker_image
 zlib:
 - '1.2'
