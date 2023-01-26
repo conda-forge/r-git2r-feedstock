@@ -12,6 +12,8 @@ cran_mirror:
 - https://cran.r-project.org
 docker_image:
 - quay.io/condaforge/linux-anvil-ppc64le
+libgit2:
+- '1.5'
 libssh2:
 - '1'
 openssl:
