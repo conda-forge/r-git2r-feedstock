@@ -1,11 +1,22 @@
+About r-git2r-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-git2r-feedstock/blob/main/LICENSE.txt)
+
 About r-git2r
-=============
+-------------
 
 Home: https://docs.ropensci.org/git2r/ (website), https://github.com/ropensci/git2r
 
 Package license: GPL-2.0-only
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-git2r-feedstock/blob/main/LICENSE.txt)
+Summary: Interface to the 'libgit2' library, which is a pure C implementation of the 'Git' core methods. Provides access to 'Git' repositories to extract data and running some basic 'Git' commands.
+About r-git2r
+-------------
+
+Home: https://docs.ropensci.org/git2r/ (website), https://github.com/ropensci/git2r
+
+Package license: GPL-2.0-only
 
 Summary: Interface to the 'libgit2' library, which is a pure C implementation of the 'Git' core methods. Provides access to 'Git' repositories to extract data and running some basic 'Git' commands.
 
