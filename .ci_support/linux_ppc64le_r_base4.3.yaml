@@ -1,7 +1,7 @@
 c_compiler:
 - gcc
 c_compiler_version:
-- '11'
+- '12'
 cdt_name:
 - cos7
 channel_sources:
@@ -13,7 +13,7 @@ cran_mirror:
 docker_image:
 - quay.io/condaforge/linux-anvil-ppc64le
 libgit2:
-- '1.5'
+- '1.6'
 libssh2:
 - '1'
 openssl:
@@ -23,7 +23,7 @@ pin_run_as_build:
     min_pin: x.x
     max_pin: x.x
 r_base:
-- '4.1'
+- '4.3'
 target_platform:
 - linux-ppc64le
 zlib:
