@@ -17,7 +17,7 @@ cran_mirror:
 docker_image:
 - quay.io/condaforge/linux-anvil-cos7-x86_64
 libgit2:
-- '1.6'
+- '1.7'
 libssh2:
 - '1'
 openssl:
