@@ -1,4 +1,4 @@
-{% set version = "0.31.0" %}
+{% set version = "0.32.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/git2r_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/git2r/git2r_{{ version }}.tar.gz
-  sha256: f1db9278fa4604600a64beaedcf86dda595d7c8a10cdb1f7300a6635e73cd66d
+  sha256: 1b5d254c0c684a56751d26d482823d0006964eb1f55c558f365d037f5e984671
 
 build:
   merge_build_host: true  # [win]
-  number: 2
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
