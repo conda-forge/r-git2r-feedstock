@@ -30,3 +30,5 @@ r_base:
 - '4.3'
 target_platform:
 - linux-aarch64
+zlib:
+- '1.2'
