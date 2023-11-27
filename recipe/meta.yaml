@@ -40,8 +40,8 @@ requirements:
     - r-base
     - libgit2                      # [not win]
     - libssh2
-    - libzlib
     - openssl
+    - zlib
   run:
     - r-base
     - {{ native }}gcc-libs         # [win]
