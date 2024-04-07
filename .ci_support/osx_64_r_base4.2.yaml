@@ -4,6 +4,10 @@ c_compiler:
 - clang
 c_compiler_version:
 - '16'
+c_stdlib:
+- macosx_deployment_target
+c_stdlib_version:
+- '10.9'
 channel_sources:
 - conda-forge
 channel_targets:
@@ -11,7 +15,7 @@ channel_targets:
 cran_mirror:
 - https://cran.r-project.org
 libgit2:
-- '1.7'
+- '1.8'
 libssh2:
 - '1'
 macos_machine:
