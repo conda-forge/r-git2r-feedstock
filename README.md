@@ -257,6 +257,6 @@ Feedstock Maintainers
 =====================
 
 * [@colinbrislawn](https://github.com/colinbrislawn/)
-* [@conda-forge/r](https://github.com/conda-forge/r/)
+* [@conda-forge/r](https://github.com/orgs/conda-forge/teams/r/)
 * [@jdblischak](https://github.com/jdblischak/)
 
