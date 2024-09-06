@@ -40,8 +40,8 @@ requirements:
   host:
     - r-base
     - libgit2
-    - libgcrypt  # [win]
-    - libgpg-error  # [win]
+    - m2-libgcrypt  # [win]
+    - m2-libgpg-error  # [win]
     - libssh2
     - openssl
     - pcre  # [win]
