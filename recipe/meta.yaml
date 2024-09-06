@@ -39,7 +39,7 @@ requirements:
     - {{ posix }}zip               # [win]
   host:
     - r-base
-    - libgit2                      # [not win]
+    - libgit2                      
     - libssh2
     - openssl
     - zlib
