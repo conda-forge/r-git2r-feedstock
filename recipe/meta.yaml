@@ -62,6 +62,7 @@ about:
 
 extra:
   recipe-maintainers:
+    - danielnachun
     - colinbrislawn
     - conda-forge/r
     - jdblischak
