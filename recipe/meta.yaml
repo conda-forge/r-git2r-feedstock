@@ -39,9 +39,12 @@ requirements:
     - {{ posix }}zip               # [win]
   host:
     - r-base
-    - libgit2                      
+    - libgit2
+    - libgcrypt
+    - libgpgerror
     - libssh2
     - openssl
+    - pcre
     - zlib
   run:
     - r-base
