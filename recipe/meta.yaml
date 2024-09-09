@@ -46,6 +46,7 @@ requirements:
   run:
     - r-base
 
+# Additional tests in run_test.r (runs automatically)
 test:
   commands:
     - $R -e "library('git2r')"           # [not win]
