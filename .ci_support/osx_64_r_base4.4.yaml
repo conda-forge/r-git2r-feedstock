@@ -5,7 +5,7 @@ MACOSX_SDK_VERSION:
 c_compiler:
 - clang
 c_compiler_version:
-- '17'
+- '18'
 c_stdlib:
 - macosx_deployment_target
 c_stdlib_version:
@@ -17,7 +17,7 @@ channel_targets:
 cran_mirror:
 - https://cran.r-project.org
 libgit2:
-- '1.8'
+- '1.9'
 libssh2:
 - '1'
 macos_machine:
