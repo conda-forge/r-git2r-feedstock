@@ -18,6 +18,8 @@ build:
   rpaths:
     - lib/R/lib/
     - lib/
+  patches:
+    - patches/0001-minimal-ucrt-libs.patch
 
 requirements:
   build:
