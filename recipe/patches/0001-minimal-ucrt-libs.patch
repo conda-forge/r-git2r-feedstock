@@ -1,0 +1,26 @@
+From a9c445f356750db4f70bf84e98f4d25e585022ab Mon Sep 17 00:00:00 2001
+From: Daniel Nachun <daniel.nachun@gmail.com>
+Date: Mon, 13 Jan 2025 22:49:56 -0800
+Subject: [PATCH] minimal ucrt libs
+
+---
+ src/Makevars.win | 4 +---
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+
+diff --git a/src/Makevars.win b/src/Makevars.win
+index 54a9b1f..8f06193 100644
+--- a/src/Makevars.win
++++ b/src/Makevars.win
+@@ -1,8 +1,6 @@
+ PKG_CPPFLAGS = -DR_NO_REMAP -DSTRICT_R_HEADERS
+ 
+-PKG_LIBS = \
+-        -lgit2 -lpcre -lssh2 -lz -lssl -lcrypto -lgcrypt -lgpg-error \
+-        -lwinhttp -lws2_32 -lcrypt32 -lole32 -lrpcrt4
++PKG_LIBS = -lgit2
+ 
+ all: clean
+ 
+-- 
+2.47.1
+
