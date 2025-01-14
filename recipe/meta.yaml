@@ -10,6 +10,8 @@ source:
     - {{ cran_mirror }}/src/contrib/git2r_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/git2r/git2r_{{ version }}.tar.gz
   sha256: 291af0e85ca17bd325c944362831ae11e371e718a2c3c65d42c935678fbbe644
+  patches:
+    - patches/0001-minimal-ucrt-libs.patch
 
 build:
   # Checking windows to see if it passes. Uncomment the line if it fails.
@@ -18,8 +20,6 @@ build:
   rpaths:
     - lib/R/lib/
     - lib/
-  patches:
-    - patches/0001-minimal-ucrt-libs.patch
 
 requirements:
   build:
