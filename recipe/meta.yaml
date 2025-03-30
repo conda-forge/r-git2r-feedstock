@@ -1,4 +1,4 @@
-{% set version = "0.35.0" %}
+{% set version = "0.36.2" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/git2r_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/git2r/git2r_{{ version }}.tar.gz
-  sha256: 291af0e85ca17bd325c944362831ae11e371e718a2c3c65d42c935678fbbe644
+  sha256: 8cd4f00555c4058836275b31f3be82034c27cad05f4b0296dfc32ca5b666ccac
   patches:
     - patches/0001-minimal-ucrt-libs.patch
 
